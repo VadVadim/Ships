@@ -88,8 +88,6 @@ while is_working:
             missile[1].centery = enemy[1].centery
             missile[2] += 1
             missile[1] = missile[1].move(-missile[2], 0)
-            # print('missileX = ', missile[1].centerx)
-            # print('EnemyX = ', enemy[1].centerx)
             sea.blit(missile[0], missile[1])
 
             if missile[1].left < -500:
